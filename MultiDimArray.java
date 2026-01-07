@@ -1,0 +1,17 @@
+public class MultiDimArray {
+    public static void main(String[] arg){
+        int [][] myNum={{1,2,3,4},{5,6,7}};
+
+        for (int i=0; i<myNum.length ; i++){
+            for (int j=0;j< myNum[i].length ; j++){
+                System.out.println(myNum[i][j]);
+            }
+        }
+
+        for (int [] rows: myNum){
+            for (int j: rows ){
+                System.out.println(j);
+            }
+        }
+    }
+}
